@@ -12,7 +12,14 @@
 <body>
 
 <!--audio-->
-<script src="https://gist.github.com/SilviuTM/e431a4acbf68465b9cf943f608fab6ec.js"></script>
+<p><audio id="loop-limited" autoplay style="width: 6em;height:20px;"><source src="https://wingless-seraph.net/material/Battle-Defeat.mp3" type="audio/ogg" />
+                                                                     <source src="https://wingless-seraph.net/material/Battle-Defeat.mp3" type="audio/mpeg" />
+</audio><br />
+<script>
+var loopLimit = 500;
+var loopCounter = 0;
+document.getElementById('loop-limited').addEventListener('ended', function(){if (loopCounter < loopLimit){this.currentTime = 0;this.play();loopCounter++;}
+}, false);</script></p>
   
 <body class="back-row-toggle splat-toggle">
   <div class="rain front-row"></div>
