@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <style>
+      body
+      {
+        background-color: rgb(47, 47, 47);
+        font-family: monospace;
+        color: rgb(191, 191, 191);
+        font-size: 20px;
+        background-image: url('./congrat.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 90% 90%;
+        background-position: center;
+      }
+      img
+      {
+        width: 200%;
+        height: 200%;
+      }
+      .image
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-100%) translateY(-30%);
+      }
+      .center1
+      {
+        position: absolute;
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      h1 
+      {
+        font-size: 50px;
+        text-shadow: 0 0 5px #FF0000, 0 0 8px #0000FF;
+      }
+      .div1
+      {
+        position: absolute;
+        width: 25%;
+        height: 15%;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: rgb(63, 63, 63);
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgb(95, 95, 95);
+        font-family: monospace;
+        font-size: 28px;
+        font-weight: bold;
+        color: rgb(191, 191, 191);
+      }
+      .div1:hover
+      {
+        background-color: rgb(79, 79, 79);
+      }
+    </style>
+    <title>
+      YOU WON
+    </title>
+  </head>
+  <body>
+    <audio id="s1">
+      <source src="./s1.mp3" type="audio/mp3">
+    </audio>
+<audio id="s2">
+      <source src="./s2.mp3" type="audio/mp3">
+    </audio>
+<audio id="s3">
+      <source src="./s3.mp3" type="audio/mp3">
+    </audio>
+<audio id="s4">
+      <source src="./s4.mp3" type="audio/mp3">
+    </audio>
+<audio id="s5">
+      <source src="./s5.mp3" type="audio/mp3">
+    </audio>
+<audio id="s6">
+      <source src="./s6.mp3" type="audio/mp3">
+    </audio>
+<audio id="s7">
+      <source src="./s7.mp3" type="audio/mp3">
+    </audio>
+   
+    <script>
+      var vAudio1 = document.getElementById("s1");
+var vAudio2 = document.getElementById("s2");
+var vAudio3 = document.getElementById("s3");
+var vAudio4 = document.getElementById("s4");
+var vAudio5 = document.getElementById("s5");
+var vAudio6 = document.getElementById("s6");
+var vAudio7 = document.getElementById("s7");
+      var hasInit = false;
+      function playMusic()
+      {
+        if(!hasInit)
+        {
+          hasInit = true;
+          vAudio1.play();
+          vAudio2.play();
+          vAudio3.play();
+          vAudio4.play();
+          vAudio5.play();
+          vAudio6.play();
+          vAudio7.play();
+        }
+      }
+    </script>
+
+
+<div onmousemove="playMusic()">
+
+    <h1><center><br>CONGRATULATION YOU ARE OUR 1000TH VISITOR<br>CLAIM YOUR REWARD</center></h1>
+    <a href="prize.html">
+    <div class="div1">
+      <div class="center1">
+        <center>Click Here To Get Free MONEY!!!💸💸💸💸</center>
+      </div>
+    </div>
+    </a>
+
+</div>
+  </body>
+</html>
