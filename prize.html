@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      body
+      {
+        background-color: rgb(47, 47, 47);
+        background-image: url('./clown.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      .div1
+      {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+      }
+    </style>
+    <title>
+      Clown
+    </title>
+  </head>
+  <body>
+    <audio id="divAudio">
+      <source src="./circ.mp3" type="audio/mp3">
+    </audio>
+   
+    <script>
+      var vAudio = document.getElementById("divAudio");
+      var hasInit = false;
+      function playMusic()
+      {
+        if(!hasInit)
+        {
+          hasInit = true;
+          vAudio.play();
+        }
+      }
+    </script>
+
+    <div class="div1" onmousemove="playMusic()"/>
+  </body>
+</html>
